@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    tools:context="MainActivity">
+
+    <EditText
+        android:id="@+id/github_username"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:hint="@string/username"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/authenticate_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/github_username"
+        android:text="@string/get_repos" />
+
+    <ListView
+        android:id="@+id/repos_list_view"
+        android:layout_width="match_parent"
+        android:layout_below="@id/authenticate_button"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>
